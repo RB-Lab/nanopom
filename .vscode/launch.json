@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:nanopom}",
+            "name": "Debug nanopom",
+            "program": "${workspaceFolder:nanopom}/.build/debug/nanopom",
+            "preLaunchTask": "swift: Build Debug nanopom"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:nanopom}",
+            "name": "Release nanopom",
+            "program": "${workspaceFolder:nanopom}/.build/release/nanopom",
+            "preLaunchTask": "swift: Build Release nanopom"
+        }
+    ]
+}
