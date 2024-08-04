@@ -23,6 +23,30 @@
             "name": "Release nanopom",
             "program": "${workspaceFolder:nanopom}/.build/release/nanopom",
             "preLaunchTask": "swift: Build Release nanopom"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:nanopom}",
+            "name": "Debug NanoPomodoro",
+            "program": "${workspaceFolder:nanopom}/.build/debug/NanoPomodoro",
+            "preLaunchTask": "swift: Build Debug NanoPomodoro"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:nanopom}",
+            "name": "Release NanoPomodoro",
+            "program": "${workspaceFolder:nanopom}/.build/release/NanoPomodoro",
+            "preLaunchTask": "swift: Build Release NanoPomodoro"
         }
     ]
 }
